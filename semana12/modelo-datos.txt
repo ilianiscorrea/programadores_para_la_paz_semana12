@@ -1,0 +1,22 @@
+Modelo de datos para la plataforma "Petición en 3 Clics":
+
+Entidad 1: Causa_Salud
+Campos principales:
+- id (Clave primaria, numérico autoincremental)
+- titulo (Texto corto, ej: "Reparación de la infraestructura del puesto de salud local")
+- descripcion (Texto largo con la justificación de la petición)
+- fecha_creacion (Fecha y hora de registro)
+- meta_apoyos (Número entero, cantidad de respaldos necesarios para emitir el PDF)
+
+Propósito de la entidad:
+Almacenar las solicitudes y reclamaciones colectivas de salud que la comunidad está promoviendo, sirviendo como la plantilla base para el documento formal que se generará.
+
+Entidad 2: Apoyo_Comunitario
+Campos principales:
+- id (Clave primaria, numérico)
+- causa_id (Clave foránea que conecta directamente con la entidad Causa_Salud)
+- seudónimo_usuario (Texto corto, alias o código para validar que es un usuario único sin exponer su identidad real)
+- fecha_apoyo (Fecha y hora del clic de respaldo)
+
+Propósito de la entidad:
+Registrar y contabilizar cada voto de apoyo que recibe una causa específica, manteniendo el vínculo técnico para saber qué causa está siendo respaldada sin almacenar información personal comprometedora.

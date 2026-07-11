@@ -1,0 +1,8 @@
+Flujo de funcionamiento del sistema "Petición en 3 Clics" aplicado a Veeduría de Salud:
+
+Pasos del flujo:
+1. Registro de la necesidad: Un veedor comunitario inicia sesión y crea una causa formal en la plataforma (por ejemplo: "Solicitud de asignación de médico permanente para el corregimiento").
+2. Almacenamiento seguro: El sistema procesa los datos y registra la causa de salud en la base de datos con un estado activo.
+3. Respaldo comunitario (Los clics de apoyo): Los ciudadanos de la comunidad ingresan a la plataforma, leen la solicitud y hacen clic en el botón "Apoyar causa" para sumar su respaldo digital.
+4. Conteo y validación: El backend actualiza la base de datos, incrementa el contador de apoyos en tiempo real y verifica si se alcanzó la meta mínima de respaldos comunitarios.
+5. Generación del documento formal: Al completarse los apoyos, el sistema compila automáticamente el título, la descripción técnica de la necesidad de salud y el número total de firmas recolectadas, generando un documento PDF estructurado como un derecho de petición formal listo para ser descargado y presentado ante la Secretaría de Salud.

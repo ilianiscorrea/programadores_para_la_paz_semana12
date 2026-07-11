@@ -1,0 +1,10 @@
+Diseño de la automatización comunitaria (n8n + Telegram):
+
+1. ¿Qué evento activa la automatización?
+El flujo se activa de manera automática mediante un webhook en n8n cuando una causa de salud alcanza con éxito el 100% de los apoyos requeridos por la comunidad en la base de datos.
+
+2. ¿Qué mensaje se envía?
+"¡Meta alcanzada! La petición comunitaria ['Título de la Causa'] ha recolectado todos los apoyos necesarios. El sistema ha generado el documento PDF formal. Coordinadores, por favor ingresar al panel administrativo para descargar el archivo y proceder con la radicación ante las autoridades de salud."
+
+3. ¿Qué información no debe enviarse por seguridad?
+Para proteger la privacidad de los participantes, el mensaje de Telegram jamás debe incluir: nombres reales de los ciudadanos que apoyaron, números de cédula, registros de ubicación residencial exacta, comentarios personales de los usuarios ni datos clínicos privados de los beneficiarios.
